@@ -1,10 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family:'Roboto', sans-serif;
-    box-sizing: border-box;
-}
+@import url(../global.css);
 
 body{
     width: 100vw;
@@ -12,65 +6,9 @@ body{
     flex-direction: column;
 }
 
-/* TOP BAR */
-.top-bar{
-    background-color: #02477D;
-    width: 100%;
-    height: 8vh;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 1rem;
-    box-sizing: border-box;
-    align-items: center;
-    position: sticky;
-    top: 0;
-}
-
-.top-bar-left{
-    display: flex;
-    height: 100%;
-    align-items: center;
-}
-
-.top-bar-right{
-    display: flex;
-    align-items: center;
-}
-
-.top-bar-right button{
-    background-color: transparent;
-    border: none;
-}
-
-.top-bar-right button img{
-}
-
-.top-bar button{
-    height: 3rem;
-    width: 3rem;
-}
-
-.top-bar .back{
-    border-radius: 50%;
-    background-color: white;
-    color: #02477D;
-    font-weight: bold;
-    font-size: 1rem;
-    margin-right: 1rem;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    border: none;
-}
-
-.top-bar-menu-name{
-    font-size: 1.5rem;
-    color: white;
-}
 
 
 /* PROFILE BACKGROUND AND PICTURE */
-
 .profile-container{
     width: 100%;
     height: 40vh;
@@ -333,77 +271,3 @@ button[type=submit]{
     background-color: transparent;
 }
 
-/* NAV */
-.margin-top{
-    margin-top: 8vh;
-    width: 100%;
-    border: red;
-}
-
-nav{
-    height: 25vh;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    bottom: 0;
-    z-index: 19;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    box-shadow: 0px -1px 5px 0px #000000bf;
-    background-color: white;
-    translate: 0 17vh;
-    animation:forwards 1s;
-    transition:ease-in-out;
-}
-
-svg{
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem;
-}
-svg path{
-    fill: #B2B2B2;
-}
-
-.active{
-    fill: #02477D;
-}
-
-.open-nav{
-    position: absolute;
-    margin-left: 45vw;
-    top: -2vh;
-    width: 10vw;
-    height: 10vw;
-    z-index: 19;
-    border-radius: 50%;
-    background-color: white;
-    color: #02477D;
-    border: none;
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-}
-
-#check-nav{
-    display: none;
-}
-
-@keyframes moveup {
-    from{
-        translate: 0 0vh;
-          
-    }
-    to{
-        translate :0 17vh;
-    }
-}
-
-@keyframes movedown {
-    from{
-        translate: 0 17vh;
-    }
-    to{
-        translate :0 0vh;
-    }
-}
