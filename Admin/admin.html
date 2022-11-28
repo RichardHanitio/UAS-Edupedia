@@ -1,0 +1,99 @@
+<?php 
+    require_once "../db.php";
+    $_SESSION['isAdmin'] = true;
+    if(!isset($_GET['keyword'])) $_GET['keyword'] = null;
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="top">
+        <a href="adminLogout.php" id="logout">Logout</a>
+        <a href="">Insert</a>
+    </div>
+    <div class="admin-top">
+        
+        
+        <div class="admin-nav">
+            <a href="" class="nav-admin">pelajar</a>
+            <a href="" class="nav-admin">pengajar</a>
+            <a href="" class="nav-admin">clan</a>
+            <a href="" class="nav-admin">video</a>
+            <a href="" class="nav-admin">paper</a>
+            <a href="" class="nav-admin">pelajar</a>
+            <a href="" class="nav-admin">pelajar</a>
+            <a href="" class="nav-admin">pelajar</a>
+            <a href="" class="nav-admin">pelajar</a>
+
+        </div>
+    </div>
+    
+
+    <div class="admin-bottom">
+        <!-- Pelajar -->
+        <?php if(!isset($_GET['page']) || $_GET['page'] == 1) {?>
+            
+
+        
+        <?php } else if ($_GET['page'] == 2) { ?>
+
+        <?php } else if ($_GET['page'] == 3) { ?>
+        <?php } else if ($_GET['page'] == 4) { ?>
+        <?php } else if ($_GET['page'] == 5) { ?>
+        <?php } else if ($_GET['page'] == 6) { ?>
+        <?php } else if ($_GET['page'] == 7) { ?>
+        <?php } else if ($_GET['page'] == 8) { ?>
+        <?php } else if ($_GET['page'] == 9) { ?>
+        <?php } ?>
+        
+        
+        
+        
+        
+        
+        
+        
+            
+            <form action="admin.php" class="find" method="GET">
+                <input type="text" class="field" placeholder="Search . . ." name='keyword'>
+                <button type="submit">Search</button>
+                <input type="hidden" name="page" value="1">
+            </form>
+            <div class="table">
+                <table>
+                    <tr id="header">
+                        <th>Company</th>
+                        <th>Contact</th>
+                        <th>Country</th>
+                        <th>Country</th>
+                        <th>Country</th>
+                        <th>Country</th>
+                        <th>Country</th>
+                    </tr>
+
+                    <?php $table = selectTableblalbalbla("balbalbal", $_GET['keyword']) while($row = mysqli_fetch_array($result)) {?>
+                        <tr>
+                            <td>Alfreds Futterkiste</td>
+                            <td>Maria Anders</td>
+                            <td>Germany</td>
+                            <td>Germany</td>
+                            <td>Germany</td>
+                            <td>Germany</td>
+                            <td>Germany</td>
+                        </tr>
+                    <?php } ?>
+                </table>
+            </div>
+            
+        
+    </div>
+</body>
+</html>

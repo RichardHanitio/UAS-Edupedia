@@ -10,12 +10,12 @@
     <!-- TOP BAR -->
     <div class="top-bar">
         <div class="top-bar-left">
-            <button class="back"><img src="./Image/Arrow.png" alt=""></button>
+            <button class="back"><img src="Image/Arrow.png" alt=""></button>
             <div class="top-bar-menu-name">Profile</div>
         </div>
         <div class="top-bar-right">
-            <button class="notif"><img src="./Image/notif.png" alt=""></button>
-            <button class="setting"><img src="./Image/setting.png" alt=""></button>
+            <button class="notif"><img src="Image/notif.png" alt=""></button>
+            <button class="setting"><img src="Image/setting.png" alt=""></button>
         </div>
     </div>
 </body>

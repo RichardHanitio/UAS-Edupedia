@@ -253,6 +253,24 @@ body{
     padding-right: 2rem;
 }
 
+.edit-bgphoto{
+    width: 100%;
+    height: 6vh;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+
+.change{
+    background-color: #60afce;
+    width: 47%;
+    height: 100%;
+    border-radius: 0.3rem;
+    color: white;
+    border: transparent;
+}
+
 button[type=submit]{
     margin-top: 1rem;
     background-color: #00A2E2;

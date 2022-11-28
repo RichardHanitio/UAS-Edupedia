@@ -100,7 +100,7 @@
                         <option value="Woman">Woman</option>
                     </select>
                 </div>
-    
+                
                 <div class="form-format">
                     <div class="field-name">Location</div>
                     <select name="location" id="" class="field list">
@@ -358,22 +358,15 @@
                         <option value="ZW">Zimbabwe</option>
                     </select>
                 </div>
-    
+
                 <div class="form-format">
-                    <div class="field-name">Zodiac</div>
-                    <select name="zodiac" id="zodiac" class="field list">
-                        <option value="AR">Aries</option>
-                        <option value="AQ">Aquarius</option>
-                        <option value="CC">Cancer</option>
-                        <option value="CP">Capricornus</option>
-                        <option value="GM">Gemini</option>
-                        <option value="LO">Leo</option>
-                        <option value="LB">Libra</option>
-                        <option value="PC">Pisces</option>
-                        <option value="SC">Scorpio</option>
-                        <option value="SG">Sagittarius</option>
-                    </select>
+                    <div class="field-name">Change Photo or Background</div>
+                    <div class="edit-bgphoto">
+                        <button class="change">Photo</button>
+                        <button class="change">Background</button>
+                    </div>
                 </div>
+                
                 
                 <div class="form-format">
                     <button type="submit" class="field">Confirm</button>
