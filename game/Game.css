@@ -1,0 +1,158 @@
+* {
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size : 16px;
+}
+
+.container {
+  width : 100vw;
+  height : 100vh;
+  display : flex;
+  overflow: hidden;
+  align-items : center;
+  justify-content: center;
+  background-color: #002453;
+
+}
+
+.inner-container {
+  height : 85%;
+  width : 80%;
+  display : flex;
+  flex-direction : column;
+  
+}
+
+.back {
+  background-color: pink;
+  width : 36px;
+  height : 36px;
+  border-radius : 50%;
+  position : relative;
+  background-color: rgba(255,255,255,.7);
+}
+
+.back svg {
+  width : 30px;
+  height : 30px;
+  position : absolute;
+  top : 3px;
+  left : 3px;
+  color: #002453;
+}
+
+.avatar-exp-container {
+  flex-basis : 75%;
+  display : flex;
+  flex-direction : column;
+  align-items: center;
+  justify-content: center;
+  gap : 20px;
+  overflow : hidden;
+}
+
+.avatar {
+  background-color: rgba(252, 218, 150, .8);
+  width : 250px;
+  border-radius : 50%;
+  height : 250px;
+  position : relative;
+  box-shadow: 3px 0 10px 0px rgba(255,255,255,0.5);
+  margin-bottom : 40px;
+}
+
+.avatar img {
+  /* width : 100px; */
+  height : 300px;
+  position : absolute;
+  top : -10px;
+  left : 30px;
+}
+
+.player-profile {
+  /* background-color : yellow; */
+  width : 100%;
+  color : white;
+}
+
+.player-name {
+  font-size : 24px;
+  font-weight : bold;
+  margin-bottom : 15px;
+}
+
+.player-level {
+  display : flex;
+  justify-content : space-between;
+  margin-bottom : 10px;
+}
+
+.player-level div{
+  font-size : 14px;
+}
+
+.achievements {
+  display : flex;
+  width : 100%;
+  justify-content: space-around;
+}
+
+.achievement {
+  width : 100px;
+  height : 100px;
+  background-color: white;
+  border-radius : 18px;
+  display: flex;
+  flex-direction : column;
+  align-items: center;
+  justify-content: center;
+  gap : 10px;
+  box-shadow : 2px 2px 5px 0 rgba(255,255,255,0.3);
+}
+
+.achievement div {
+  text-align : center;
+}
+
+.achievement div:first-child {
+  font-size : 22px;
+  font-weight : bold;
+  color : #002453;
+}
+
+.achievement div:last-child {
+  font-size : 12px;
+}
+
+.player-level-progress {
+  width : 100%;
+  height : 20px;
+}
+
+.play-game {
+  flex-basis : 20%;
+  width : 100%;
+  height : 100%;
+  display : flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  border : none;
+  outline : none;
+  border-radius : 10px;
+  height : 45px;
+  color : white;
+}
+
+.play-btn {
+  background-color: #057baf;
+  width : 100%;
+}
+
+.hide {
+  display : none;
+}

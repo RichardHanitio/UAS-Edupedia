@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Game.css">
+  <title>Game</title>
+</head>
+<body>
+  <div class="container">
+    <div class="inner-container">
+      <!-- back -->
+      <div class="back">
+        <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="m15 18-6-6 6-6"></path>
+        </svg>
+      </div>
+      <!-- avatar & exp -->
+      <div class="avatar-exp-container">
+        <!-- character avatar -->
+        <div class="avatar">
+          <img src="../images/albedo-2.png" alt="">
+        </div>
+        <!-- character profile -->
+        <div class="player-profile">
+          <div class="player-name">Zeron</div>
+          <div class="player-level">
+            <div>LEVEL 3</div>
+            <div>1450/2000</div>
+          </div>
+          <progress value="1450" max="2000" class="player-level-progress"/>
+        </div>
+        <!-- character achievements -->
+        <div class="achievements">
+          <div class="achievement">
+            <div>10</div>
+            <div>Day streak</div>
+          </div>
+          <div class="achievement">
+            <div>1023</div>
+            <div>Highest Score</div>
+          </div>
+          <div class="achievement">
+            <div>120</div>
+            <div>Answered</div>
+          </div>
+        </div>
+      </div>
+      <div class="play-game">
+        <button class="btn play-btn" onclick="location.href='./quiz/Quiz.html'">
+          Play Game 
+        </button>
+      </div>
+    </div>
+</body>
+</html>

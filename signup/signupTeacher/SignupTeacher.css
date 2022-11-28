@@ -27,7 +27,6 @@
   display : flex;
   justify-content : center;
   align-items : center;
-
 }
 
 .logo img {
@@ -35,15 +34,15 @@
 }
 
 .username-pass-container {
-  flex-basis : 45%;
+  flex-basis : 75%;
   display : flex;
   flex-direction: column;
   align-items : center;
   justify-content: center;
-  gap : 15px 0;
+  gap : 22px 0;
 }
 
-.login {
+.signup {
   font-size : 30px;
   margin-bottom : 20px;
 }
@@ -90,7 +89,6 @@
   transition : .2s;
 }
 
-
 .show-pass {
   font-size : 14px;
   width : 80%;
@@ -109,56 +107,9 @@
   color : white;
 }
 
-.btn-login {
+.btn-signup {
   background-color : #057baf;
   width : 60%;
   margin-top : 10px;
 }
-
-.or {
-  flex-basis : 5%;
-  display : flex;
-  align-items : center;
-  justify-content: center;
-}
-
-.or div {
-  height : 1px;
-  width : 100%;
-  background-color: rgba(70, 70, 70, .5);
-}
-
-.or span {
-  margin : 12px;
-}
-
-.facebook-google-container {
-  display : flex;
-  flex-basis : 15%;
-  align-items : center;
-  justify-content : center;
-  gap : 12px;
-}
-
-.btn-facebook, .btn-google {
-  background-color: #00a2e2;
-  display : flex;
-  align-items : center;
-  width : 40%;
-  justify-content : center;
-  gap : 10px;
-}
-
-.sign-up {
-  flex-basis : 10%;
-  display : flex;
-  align-items: center;
-  justify-content: center;
-  font-size : 14px;
-}
-
-.sign-up a{
-  text-decoration: none;
-}
-
 

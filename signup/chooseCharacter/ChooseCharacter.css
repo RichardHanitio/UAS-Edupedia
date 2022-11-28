@@ -1,0 +1,109 @@
+* {
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size : 16px;
+}
+
+.container {
+  width : 100vw;
+  height : 100vh;
+  display : flex;
+  overflow: hidden;
+  align-items : center;
+  justify-content: center;
+}
+
+.inner-container {
+  height : 85%;
+  width : 80%;
+  display : flex;
+  flex-direction : column;
+}
+
+.title {
+  flex-basis : 10%;
+  font-size : 22px;
+  font-weight : 600;
+  text-align : center;
+}
+
+.selections {
+  flex-basis : 80%;
+  /* background-color: pink; */
+  width : 100%;
+  height : 100%;
+  display : grid;
+  grid-template-columns : repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.avatar {
+  background-color : lightgray;
+  width : 120px;
+  height : 120px;
+  border-radius : 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar.albedo {
+  background-color : #fab632;
+}
+
+.avatar.tartaglia {
+  background-color: #4CC2F1;
+}
+
+.avatar.hutao {
+  background-color: #E37335;
+}
+
+.avatar.venti {
+  background-color: #74C2A8;
+}
+
+.avatar.keqing {
+  background-color: #af8ec1;
+}
+
+.avatar.ayaka {
+  background-color: #9fd6e3;
+}
+.avatar.nahida{
+  background-color: #a5c83b;
+  grid-column : span 2;
+}
+
+.avatar img {
+  width : 70%;
+}
+
+.selected {
+  border : 2px solid #02477d;
+}
+
+.confirm {
+  flex-basis : 10%;
+  display : flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  border : none;
+  outline : none;
+  border-radius : 10px;
+  height : 45px;
+  color : white;
+}
+
+.btn-confirm {
+  background-color : #C7EDF8;
+  width : 60%;
+  margin-top : 10px;
+  align-self : flex-end;
+}
