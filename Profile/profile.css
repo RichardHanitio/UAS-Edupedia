@@ -4,6 +4,7 @@ body{
     width: 100vw;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 
@@ -16,21 +17,42 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(./Image/profile-background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: relative;
+}
+
+#background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -99;
+}
+
+.profile-container-2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .profile-picture{
-    width: 13rem;
-    height: 13rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     margin-bottom: 1rem;
-    background-image: url(./Image/01-shutterstock_476340928-Irina-Bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: white;
 }
+
+.profile-picture img{
+    width: 100%;
+    height: 100%;
+}
+
 
 .profile-name{
     font-size: 2rem;
@@ -130,12 +152,12 @@ body{
     font-size: 0.7rem;
 }
 
-#zodiac{
+#avatar{
     width: 100%;
     height: 100%;
 }
 
-#zodiac img{
+#avatar img{
     width: 40%;
 }
 
@@ -186,7 +208,7 @@ body{
 }
 
 .edit-form{
-    height: 60vh;
+    height: 70vh;
     width: 80vw;
     border: solid white;
     background-color: white;
@@ -269,6 +291,9 @@ body{
     border-radius: 0.3rem;
     color: white;
     border: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button[type=submit]{
@@ -277,6 +302,12 @@ button[type=submit]{
     color: white;
     border: none;
     font-size: 1rem;
+}
+
+input[type=file]{
+    opacity: 0;
+    position: absolute;
+    z-index: -1
 }
 
 .close{

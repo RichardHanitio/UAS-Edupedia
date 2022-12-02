@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Insert Form</title>
+    <link rel="stylesheet" href="../form.css">
+</head>
+<body>
+    <form action="contentInsert.php" method="post" enctype="multipart/form-data">
+        <a href="../insert.php" class="back"><img src="../../Image/Arrow.png" alt=""></a>
+        
+        <div class="form-format first">
+            <div class="field-name">Nama</div>
+            <input type="text" class="field" name="nama">
+        </div>
+
+        <div class="form-format">
+            <div class="field-name">Username</div>
+            <input type="text" class="field" name="Username">
+        </div>
+
+        <div class="form-format">
+            <div class="field-name">Email</div>
+            <input type="text" class="field" name="email">
+        </div>
+
+        <div class="form-format">
+            <div class="field-name" >Password</div>
+            <input type="text" class="field" name="password">
+        </div>
+
+        <div class="form-format">
+            <div class="field-name">Gender</div>
+            <select name="gender" id="gender" class="field list">
+                <option value="Man">Man</option>
+                <option value="Woman">Woman</option>
+            </select>
+        </div>
+
+        <div class="form-format">
+            <div class="field-name" >School</div>
+            <input type="text" class="field" name="school">
+        </div>
+
+        <div class="form-format">
+            <div class="field-name">Location</div>
+            <select name="location" id="" class="field list">
+                <option value="AF">Afghanistan</option>
+                <option value="AU">Australia</option>
+                <option value="CA">Canada</option>
+                <option value="EC">Ecuador</option>
+                <option value="EG">Egypt</option>
+                <option value="FI">Finland</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+                <option value="HK">Hong Kong</option>
+                <option value="IN">India</option>
+                <option value="ID">Indonesia</option>
+                <option value="IL">Israel</option>
+                <option value="IT">Italy</option>
+                <option value="JM">Jamaica</option>
+                <option value="JP">Japan</option>
+                <option value="KR">Korea</option>
+                <option value="MM">Myanmar</option>
+                <option value="NL">Netherlands</option>
+                <option value="PH">Philippines</option>
+            </select>
+        </div>
+
+        <div class="form-format">
+            <div class="field-name">Birthday</div>
+            <input type="date" class="field">
+        </div>
+
+        <div class="form-format">
+            <div class="field-name" >Avatar</div>
+            <input type="text" class="field" name="avatar">
+        </div>
+
+        <div class="form-format">
+            <div class="field-name" >Profile</div>
+            <input type="file" class="field" name="profile" id="">
+        </div>
+        
+        <div class="form-format">
+            <div class="field-name" >Background</div>
+            <input type="file" class="field" name="background" id="">
+        </div>  
+
+        <div class="form-format">
+            <div class="field-name">Role</div>
+            <input type="text" class="field" name="role">
+        </div>
+
+        <div class="form-format">
+            <button type="submit" class="field" name="insertContent">Confirm</button>
+        </div>
+    </form>
+</body>
+</html>
