@@ -1,3 +1,7 @@
+<?php
+  require_once("../db.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,8 +21,11 @@
       <div class="logo">
         <img src="../images/logo.png" alt="">
       </div>
-      <form action="" method="post" class="username-pass-container"> 
+      <form action="Login-db.php" method="POST" class="username-pass-container"> 
         <h1 class="login">Login</h1>
+        <div class="error">
+          <?php echo $_GET["err"]?>
+        </div>
         <!-- username -->
         <div class="field">
           <input type="text" name="username" id="username" placeholder=" ">
@@ -34,7 +41,7 @@
           <input type="checkbox" id="show-password" />
           <label for="show-password">Show Password</label>
         </div>
-        <button class="btn btn-login">
+        <button class="btn btn-login" name="login">
           Login
         </button>
       </form>

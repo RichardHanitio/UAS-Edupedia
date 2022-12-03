@@ -34,6 +34,10 @@
   height : 70%;
 }
 
+.error {
+  /* background-color : ; */
+}
+
 .username-pass-container {
   flex-basis : 45%;
   display : flex;

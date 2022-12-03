@@ -6,6 +6,32 @@
     box-sizing: border-box;
 }
 
+.container {
+  width : 100vw;
+  height : 100vh;
+  display : flex;
+  overflow: hidden;
+  align-items : center;
+  justify-content: center;
+  background-color: #002453;
+}
+
+.inner-container {
+  height : 85%;
+  width : 80%;
+  display : flex;
+  flex-direction : column;
+}
+
+.btn {
+  border : none;
+  outline : none;
+  border-radius : 10px;
+  height : 45px;
+  color : white;
+}
+
+
 /* TOP BAR */
 .top-bar{
     background-color: #02477D;

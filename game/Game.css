@@ -1,29 +1,4 @@
-* {
-  margin : 0;
-  padding : 0;
-  box-sizing : border-box;
-  font-family: 'Roboto', sans-serif;
-  font-size : 16px;
-}
-
-.container {
-  width : 100vw;
-  height : 100vh;
-  display : flex;
-  overflow: hidden;
-  align-items : center;
-  justify-content: center;
-  background-color: #002453;
-
-}
-
-.inner-container {
-  height : 85%;
-  width : 80%;
-  display : flex;
-  flex-direction : column;
-  
-}
+@import "../global.css";
 
 .back {
   background-color: pink;
@@ -53,7 +28,7 @@
   overflow : hidden;
 }
 
-.avatar {
+.avatar-exp-container .avatar {
   background-color: rgba(252, 218, 150, .8);
   width : 250px;
   border-radius : 50%;
@@ -63,43 +38,46 @@
   margin-bottom : 40px;
 }
 
-.avatar img {
-  /* width : 100px; */
+.avatar-exp-container .avatar img {
   height : 300px;
   position : absolute;
   top : -10px;
   left : 30px;
 }
 
-.player-profile {
-  /* background-color : yellow; */
+.avatar-exp-container .player-profile {
   width : 100%;
   color : white;
 }
 
-.player-name {
+.avatar-exp-container .player-name {
   font-size : 24px;
   font-weight : bold;
   margin-bottom : 15px;
 }
 
-.player-level {
+.avatar-exp-container .player-level {
   display : flex;
   justify-content : space-between;
   margin-bottom : 10px;
 }
 
-.player-level div{
+.avatar-exp-container .player-level div{
   font-size : 14px;
 }
 
-.achievements {
+.player-level-progress {
+  width : 100%;
+  height : 20px;
+}
+
+.avatar-exp-container .achievements {
   display : flex;
   width : 100%;
   justify-content: space-around;
 }
 
-.achievement {
+.avatar-exp-container .achievement {
   width : 100px;
   height : 100px;
   background-color: white;
@@ -112,23 +90,18 @@
   box-shadow : 2px 2px 5px 0 rgba(255,255,255,0.3);
 }
 
-.achievement div {
+.avatar-exp-container .achievement div {
   text-align : center;
 }
 
-.achievement div:first-child {
+.avatar-exp-container .achievement div:first-child {
   font-size : 22px;
   font-weight : bold;
   color : #002453;
 }
 
-.achievement div:last-child {
-  font-size : 12px;
-}
-
-.player-level-progress {
-  width : 100%;
-  height : 20px;
+.avatar-exp-container .achievement div:last-child {
+  font-size : 12px; 
 }
 
 .play-game {
@@ -140,19 +113,7 @@
   justify-content: center;
 }
 
-.btn {
-  border : none;
-  outline : none;
-  border-radius : 10px;
-  height : 45px;
-  color : white;
-}
-
-.play-btn {
+.play-game .play-btn {
   background-color: #057baf;
   width : 100%;
-}
-
-.hide {
-  display : none;
 }
