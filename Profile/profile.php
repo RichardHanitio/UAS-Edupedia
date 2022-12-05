@@ -8,7 +8,6 @@
     $qryLocation = mysqli_query($conn, "SELECT * from location");
     $qryLocationU = mysqli_query($conn, "SELECT * from location WHERE id_location='$ulo'");
     $qryAvatar = mysqli_query($conn, "SELECT * from avatar");
-    $qryGender = mysqli_query($conn, "SELECT * from gender");
 
     $userLocation = mysqli_fetch_array($qryLocationU);
     $userLocationName = $userLocation[1];
@@ -69,7 +68,7 @@
 
                 <div class="info">
                     <div class="title">Gender</div>
-                    <div class="value" id="gender"><?= $user["id_gender"] ?></div>
+                    <div class="value" id="gender"><?= $user["gender"] ?></div>
                 </div>
 
                 <div class="info">
@@ -114,10 +113,9 @@
     
                 <div class="form-format">
                     <div class="field-name">Gender</div>
-                    <select name="gender" id="gender" class="field list" value="<?= $user["id_gender"] ?>">
-                        <?php while($row = mysqli_fetch_assoc($qryGender)) {?>
-                            <option <?php if($user['id_gender'] == $row['id_gender']) echo "selected='selected'" ?> value="<?= $row['id_gender'] ?>"><?= $row['id_gender'] ?></option>
-                        <?php } ?>
+                    <select name="gender" id="gender" class="field list" value="<?= $user["gender"] ?>">
+                        <option <?php if($user['gender'] == "Male") echo "selected='selected'" ?> value="Male">Male</option>
+                        <option <?php if($user['gender'] == "Female") echo "selected='selected'" ?> value="Female">Female</option>
                     </select>
                 </div>
                 

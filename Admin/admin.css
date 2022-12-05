@@ -73,7 +73,6 @@ body{
 }
 
 .admin-bottom{
-    border: red solid;
 }
 
 .table{
@@ -86,13 +85,14 @@ table{
 th{
     
     color: rgb(235, 235, 235);
+    padding: 1rem;
 }
 tr{
     border: solid black;
 }
 
 td{
-    padding: 0.2rem;
+    padding: 0.5rem;
     border: solid black;
     color: rgb(235, 235, 235);
 }
@@ -103,6 +103,10 @@ tr:nth-child(even){
 
 tr:nth-child(odd){
     background-color:var(--blue-900);
+}
+
+td a{
+    color: white;
 }
 
 

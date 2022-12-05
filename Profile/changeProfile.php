@@ -50,7 +50,7 @@
         $avatar = $_POST['avatar'];
         
         
-        $qry = mysqli_query($conn, "UPDATE user SET name='$name', birthday='$birthday', id_gender='$gender', id_location='$location', id_avatar='$avatar' WHERE email='$email'");
+        $qry = mysqli_query($conn, "UPDATE user SET name='$name', birthday='$birthday', gender='$gender', id_location='$location', id_avatar='$avatar' WHERE email='$email'");
 
         if($qry){
            header("location: profile.php");
