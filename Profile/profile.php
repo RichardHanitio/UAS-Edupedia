@@ -1,8 +1,7 @@
 <?php 
     require_once "../db.php";
 
-    //$userEmail = $_SESSION["user"];
-    $userEmail= "ricky@gmail.com";
+    $userEmail = $_SESSION["user"];
     $profileQuery = mysqli_query($conn, "SELECT * from user WHERE email='$userEmail'");
     $user = mysqli_fetch_assoc($profileQuery);
     $ulo = $user['id_location'];
