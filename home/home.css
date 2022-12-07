@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  /* background-color: var(--blue-300); */
+}
+.carousel {
+  width: 50%;
+  margin: auto;
+}
+.news-container {
+  background-color: var(--blue-500);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 11rem;
+  box-shadow: 10px 5px 5px black;
+}
+.news-container > p {
+  margin-left: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.news-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.reminder {
+  height: 15rem;
+}
+.reminder-scroll {
+  display: flex;
+}
+.reminder-container {
+  display: flex;
+  border-radius: 30px;
+  background-color: white;
+  width: 45%;
+  height: 11rem;
+  margin-left: 0.625rem;
+}
+.reminder-info > p {
+  margin: 0.0625rem;
+  margin-left: 0.625rem;
+}
+.reminder-picture {
+  border-radius: 1.25rem;
+}
+.reminder-text {
+  font-size: 0.6rem;
+  color: black;
+}
