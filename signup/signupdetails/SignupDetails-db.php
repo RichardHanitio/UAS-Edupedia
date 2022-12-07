@@ -12,15 +12,13 @@ if(isset($_POST["signup"])) {
   $location = "indonesia";
   $birthday = date_format(date_create($_POST["birthday"]), "Y-m-d");
   $avatar = "not-selected";
-  $profile = "not-selected";
-  $background = "not-selected";
+  $profile = "default-photo.png";
+  $background = "default-background.png";
   $role = $_POST["role"];
-
 
 
   $stmt = $conn->prepare($query);
   $stmt->bind_param("ssssssssssss", $email, $name, $username, $password, $gender, $school, $location, $birthday, $avatar, $profile, $background, $role);
   $stmt->execute();
-
 }
 ?>
