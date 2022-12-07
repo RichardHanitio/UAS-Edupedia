@@ -1,0 +1,160 @@
+@import url(../global.css);
+
+/* Admin */
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkblue-300);
+}
+.top{
+    background-color: var(--blue-500);
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top a{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.insert{
+    
+}
+
+#logout{
+    background-color: orangered;
+}
+
+.admin-top{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.find{
+    width: 100%;
+    border: solid 1px;
+    display: flex;
+    height: 4vh;
+}
+
+.find .field{
+    width: 80%;
+    padding-left: 1rem;
+}
+
+.find button[type="submit"]{
+    width: 20%;
+    border: none;
+    border-left:solid black 1px;
+    background-color: var(--blue-700);
+    color: white;
+}
+
+.admin-nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.admin-nav a{
+    border: solid var(--darkblue-700);
+    padding: 0.5rem;
+    background-color: var(--darkblue-500);
+    color: white;
+}
+
+.admin-bottom{
+    border: red solid;
+}
+
+.table{
+    overflow: scroll;
+    width: 100%;
+}
+table{
+    border-collapse: collapse;
+}
+th{
+    
+    color: rgb(235, 235, 235);
+}
+tr{
+    border: solid black;
+}
+
+td{
+    padding: 0.2rem;
+    border: solid black;
+    color: rgb(235, 235, 235);
+}
+
+tr:nth-child(even){
+    background-color: var(--blue-700);
+}
+
+tr:nth-child(odd){
+    background-color:var(--blue-900);
+}
+
+
+/* Insert */
+.insert-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.insert-choice{
+    border: solid 1px lightgray;
+    box-shadow: 0px 10px 10px 0px #000000bf;
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: relative;
+}
+
+.form-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 10%;
+    margin-top: 1rem;
+    background-color: var(--blue-500);
+    color: white;
+}
+
+.back{
+    width: 5vh;
+    height: 5vh;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 5px 5px 0px #000000bf;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

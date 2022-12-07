@@ -23,9 +23,7 @@
       </div>
       <form action="Login-db.php" method="POST" class="username-pass-container"> 
         <h1 class="login">Login</h1>
-        <div class="error">
-          <?php echo $_GET["err"]?>
-        </div>
+        <?php if(isset($_GET["err"])) echo "<div class='error'>".$_GET["err"]."</div>"?>
         <!-- username -->
         <div class="field">
           <input type="text" name="username" id="username" placeholder=" ">

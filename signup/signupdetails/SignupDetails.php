@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="SignupStudent.css">
-  <title>Signup as Teacher</title>
+  <link rel="stylesheet" href="SignupDetails.css">
+  <title>Signup Details</title>
 </head>
 <body>
   <div class="container">
@@ -13,7 +13,8 @@
       <div class="logo">
         <img src="../../images/logo.png" alt="">
       </div>
-      <form action="" method="post" class="username-pass-container"> 
+      <form action="SignupDetails-db.php
+      " method="POST" class="username-pass-container"> 
         <h1 class="signup">Signup</h1>
          <!-- fullname -->
         <div class="field">
@@ -25,6 +26,10 @@
           <input type="text" name="username" id="username" placeholder=" ">
           <label for="username">User Name</label>
         </div>
+        
+        <!-- role -->
+        <input type="hidden" name="role" id="role" placeholder=" " value="<?php echo $_GET['role']?>" >
+        
          <!-- email -->
         <div class="field">
           <input type="email" name="email" id="email" placeholder=" ">
@@ -53,7 +58,7 @@
         </div>
 
         <!-- submit btn -->
-        <button class="btn btn-signup" onclick="location.href='../chooseCharacter/ChooseCharacter.html'">
+        <button class="btn btn-signup" name="signup" onclick="location.href='../chooseCharacter/ChooseCharacter.html'">
           Signup
         </button>
       </form>

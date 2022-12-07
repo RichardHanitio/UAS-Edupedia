@@ -1,25 +1,7 @@
-* {
-  margin : 0;
-  padding : 0;
-  box-sizing : border-box;
-  font-family: 'Roboto', sans-serif;
-  font-size : 16px;
-}
+@import "../global.css";
 
 .container {
-  width : 100vw;
-  height : 100vh;
-  display : flex;
-  overflow: hidden;
-  align-items : center;
-  justify-content: center;
-}
-
-.inner-container {
-  height : 85%;
-  width : 80%;
-  display : flex;
-  flex-direction : column;
+  background-color: white;
 }
 
 .logo {
@@ -27,7 +9,6 @@
   display : flex;
   justify-content : center;
   align-items : center;
-
 }
 
 .logo img {
@@ -35,7 +16,13 @@
 }
 
 .error {
-  /* background-color : ; */
+  background-color : rgba(241, 153, 112, .5);
+  width : 80%;
+  color : var(--red-700);
+  border : 1px solid var(--red-700);
+  border-radius : 3px;
+  padding : 5px;
+  text-align : center;
 }
 
 .username-pass-container {

@@ -1,9 +1,9 @@
 <?php
   require "../db.php";
-  $query = "SELECT * FROM user WHERE username=? AND password=?";
+  $query = "SELECT * FROM user WHERE LOWER(username)=? AND password=?";
 
   if(isset($_POST["login"])) {
-    $username = $_POST["username"];
+    $username = strtolower($_POST["username"]);
     $password = $_POST["password"];
 
     $stmt = $conn->prepare($query);
@@ -13,7 +13,7 @@
     $res = $stmt->get_result()->fetch_assoc();
     
     if(!empty($res)) {
-      $_SESSION["email"] = $res["email"];
+      $_SESSION["user"] = $res["email"];
       header("Location: ./Login.php");
     } else {
       header("Location: ./Login.php?err=Wrong email or password");

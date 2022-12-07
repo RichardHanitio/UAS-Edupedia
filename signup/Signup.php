@@ -21,11 +21,11 @@
       <div class="choose-role">
         <div class="question">Who are you?</div>
         <div class="answer">
-          <div class="teacher choose-item" onclick="location.href='./signupTeacher/SignupTeacher.html'">
+          <div class="teacher choose-item" onclick="location.href='./signupdetails/SignupDetails.php?role=teacher'">
             <img src="../images/teacher.png" alt="teacher">
             <div>I am a Teacher</div>
           </div>
-          <div class="student choose-item" onclick="location.href='./signupStudent/SignupStudent.html'">
+          <div class="student choose-item" onclick="location.href='./signupdetails/SignupDetails.php?role=student'">
             <img src="../images/student.png" alt="teacher">
             <div>I am a Student</div>
           </div>
@@ -33,7 +33,7 @@
       </div>
 
       <div class="sign-in">
-        Already have an account? Click here to &nbsp;<a href="../login/Login.html">log in.</a>
+        Already have an account? Click here to &nbsp;<a href="../login/Login.php">log in.</a>
       </div>
     </div>
   </div>
