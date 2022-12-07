@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+.profile {
+  display: flex;
+  gap: 1.25rem;
+  margin-left: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.chat-info {
+  display: flex;
+  gap: 6rem;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 0.625rem;
+}
+.group-box {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  margin-left: 1.25rem;
+  margin-top: 0.8rem;
+  font-weight: bold;
+}

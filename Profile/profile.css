@@ -284,6 +284,10 @@ body{
     color: grey;
 }
 
+.edit-bgphoto a{
+    color: white;
+}
+
 .change{
     background-color: #60afce;
     width: 47%;

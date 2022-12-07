@@ -95,3 +95,11 @@ button[type=submit]{
     justify-content: center;
     align-items: center;
 }
+
+.formAdmin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 80vw;
+}
