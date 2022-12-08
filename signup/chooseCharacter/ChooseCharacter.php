@@ -32,11 +32,11 @@
         <div class="avatar keqing" name="keqing">
           <img src="../../images/keqing.png" alt="">
         </div>
-        <div class="avatar ayaka">
-          <img src="../../images/ayaka.png" alt="" name="ayaka">
+        <div class="avatar ayaka" name="ayaka">
+          <img src="../../images/ayaka.png" alt="" >
         </div>
-        <div class="avatar nahida">
-          <img src="../../images/nahida.png" alt="" name="nahida">
+        <div class="avatar nahida" name="nahida">
+          <img src="../../images/nahida.png" alt="">
         </div>
       </div>
       <form class="confirm" action="./Choose-db.php" method="POST">
