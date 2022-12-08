@@ -11,7 +11,6 @@
     <div class="top-bar">
         <div class="top-bar-left">
             <button class="back"><img src="../Image/Arrow.png" alt="arrow" /></button>
-            <div class="top-bar-menu-name">Profile</div>
         </div>
         <div class="top-bar-right">
             <button class="notif"><img src="../Image/notif.png" alt=""></button>
