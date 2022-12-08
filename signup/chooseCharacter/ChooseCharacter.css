@@ -1,3 +1,5 @@
+@import "../../global.css";
+
 * {
   margin : 0;
   padding : 0;
@@ -13,6 +15,7 @@
   overflow: hidden;
   align-items : center;
   justify-content: center;
+  background-color : white;
 }
 
 .inner-container {
@@ -102,7 +105,7 @@
 }
 
 .btn-confirm {
-  background-color : #C7EDF8;
+  background-color : var(--blue-500);
   width : 60%;
   margin-top : 10px;
   align-self : flex-end;

@@ -14,9 +14,9 @@
     
     if(!empty($res)) {
       $_SESSION["user"] = $res["email"];
-      header("Location: ./Login.php");
+      header("Location: ../home/home.php");
     } else {
-      header("Location: ./Login.php?err=Wrong email or password");
+      header("Location: ./Login.php?err=Wrong username or password");
     }
   }
 ?>

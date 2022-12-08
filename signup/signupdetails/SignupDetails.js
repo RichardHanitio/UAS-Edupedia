@@ -4,11 +4,9 @@ const pass = document.querySelector("#password");
 showPass.checked = false;
 
 showPass.addEventListener("change", () => {
-  if(showPass.checked) {
+  if (showPass.checked) {
     pass.setAttribute("type", "text");
   } else {
     pass.setAttribute("type", "password");
   }
-})
-
-
+});

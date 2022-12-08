@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="SignupDetails.css">
   <title>Signup Details</title>
+  <script src="./SignupDetails.js" defer></script>
 </head>
 <body>
   <div class="container">
@@ -13,8 +14,7 @@
       <div class="logo">
         <img src="../../images/logo.png" alt="">
       </div>
-      <form action="SignupDetails-db.php
-      " method="POST" class="username-pass-container"> 
+      <form action="SignupDetails-db.php" method="POST" class="username-pass-container"> 
         <h1 class="signup">Signup</h1>
          <!-- fullname -->
         <div class="field">
@@ -58,7 +58,7 @@
         </div>
 
         <!-- submit btn -->
-        <button class="btn btn-signup" name="signup" onclick="location.href='../chooseCharacter/ChooseCharacter.html'">
+        <button class="btn btn-signup" name="signup">
           Signup
         </button>
       </form>

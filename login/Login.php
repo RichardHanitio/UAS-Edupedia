@@ -61,7 +61,7 @@
         </button>
       </div>
       <div class="sign-up">
-        Don't have an account? &nbsp;<a href="../signup/Signup.html">Sign up</a>
+        Don't have an account? &nbsp;<a href="../signup/Signup.php">Sign up</a>
       </div>
     </div>
   </div>

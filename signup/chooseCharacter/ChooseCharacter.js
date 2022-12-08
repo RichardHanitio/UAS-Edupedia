@@ -1,8 +1,7 @@
 const avatars = [...document.querySelectorAll(".avatar")]
 const btnConfirm = document.querySelector(".btn-confirm")
+const confirmAvatar = document.querySelector(".confirm-avatar");
 let currentSelected = null;
-
-btnConfirm.setAttribute("disabled", true);
 
 avatars.forEach(avatar => {
   avatar.addEventListener("click", (e) => {
@@ -17,8 +16,8 @@ avatars.forEach(avatar => {
       e.target.classList.toggle("selected");
       currentSelected = e.target; 
     }
-    btnConfirm.style.backgroundColor = "#02477d";
-    btnConfirm.setAttribute("disabled", false);
+    console.log(currentSelected.getAttribute("name"));
+    confirmAvatar.setAttribute("value", currentSelected.getAttribute("name"));
   })
 })
 
