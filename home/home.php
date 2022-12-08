@@ -8,14 +8,14 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="stylesheet" href="home.css" />
-    <link rel="stylesheet" href="../global.css" />
     <!-- Bootstrap CSS -->
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../global.css" />
     <script src="../global.js"></script>
 
     <title>Home</title>
@@ -31,21 +31,21 @@
         <div class="carousel-item active">
           <img
             class="d-block w-100"
-            src="../image/camera_icon.jpg"
+            src="../image/kampusMerdeka.png"
             alt="First slide"
           />
         </div>
         <div class="carousel-item">
           <img
             class="d-block w-100"
-            src="../image/PC_icon.png"
+            src="../image/uph_logo.png"
             alt="Second slide"
           />
         </div>
         <div class="carousel-item">
           <img
             class="d-block w-100"
-            src="../image/friend_icon.png"
+            src="../image/eternak.jpeg"
             alt="Third slide"
           />
         </div>

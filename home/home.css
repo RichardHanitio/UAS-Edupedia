@@ -7,8 +7,11 @@
   /* background-color: var(--blue-300); */
 }
 .carousel {
-  width: 50%;
+  margin-top: 3.125rem;
+  width: 90%;
   margin: auto;
+  position: relative;
+  z-index: -1;
 }
 .news-container {
   background-color: var(--blue-500);
